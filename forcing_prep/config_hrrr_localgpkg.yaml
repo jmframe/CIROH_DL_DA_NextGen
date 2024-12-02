@@ -4,7 +4,7 @@ basins:
   #- "1195100"
   # - "1022500" #may list out basins of interest, or simply specify 'all'
   - 'all'
-time_bgn: '2018-07-13' # YYYY-MM-DD, The earliest HRRR zarr data with precipitation begins on '2018-07-13'
+time_bgn: '2019-01-03' # YYYY-MM-DD, The earliest HRRR zarr data with precipitation begins on '2018-07-13'
 time_end: '2024-05-30' # YYYY-MM-DD
 
 cvar: 8 # Chunk size for variables. Default 8.

@@ -191,7 +191,7 @@ if __name__ == "__main__":
                 print(f"Reading geopackage data locally from: {gpkg_file}")
                 gdf_raw =gpd.read_file(gpkg_file[0],engine='pyogrio')
                 if epsg:
-                    gdf_raw = gdf_raw.set_crs(epsg=epsg)
+                    gdf_raw = gdf_raw.set_crs(epsg=epsg,allow_override=True)
                 else:
                     warnings.warn("EPSG NOT SPECIFIED FOR INPUT DATA!!!")
                 # Convert to the grid's native projection of LambertConformal:
